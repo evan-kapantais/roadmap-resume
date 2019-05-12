@@ -257,3 +257,25 @@ section {
 .workflow > li:last-item {
   margin-bottom: 0;
 }
+
+#interests .container {
+  margin-top: 20%;
+}
+
+#interests h1 {
+  margin-bottom: 40px;
+  font-size: 3em;
+}
+
+#interests .container > p {
+  line-height: 1.5;
+  width: 80%;
+}
+
+#interests .container > p {
+  margin-bottom: 20px;
+}
+
+#interests .container > p:last-child {
+  margin: 0;
+}
