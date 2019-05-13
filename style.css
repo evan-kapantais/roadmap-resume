@@ -21,7 +21,7 @@ body {
 }
 
 section {
-  margin-left: 300px;
+  margin-left: 350px;
   color: var(--primary-oposite-colour);
   min-height: 100vh;
   padding: 0 100px;
@@ -59,6 +59,16 @@ section {
 
 .portrait:hover > img {
   transform: scale(1.1);
+}
+
+.menu-button {
+  padding: 5px 15px;
+  background: var(--primary-orange);
+  border: 2px solid var(--primary-colour);
+  color: var(--primary-colour);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: none;
 }
 
 .nav-list {
@@ -168,7 +178,7 @@ section {
 }
 
 .section > .container {
-  width: 70%;
+  width: 80%;
 }
 
 .section h1 {
