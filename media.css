@@ -1,0 +1,25 @@
+@media (max-width: 1120px) {
+  .navbar {
+    display: none;
+  }
+
+  section {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header {
+    width: auto;
+    padding: 0 6em;
+    margin-top: 40%;
+  }
+
+  .section .container {
+    width: auto;
+  }
+
+  #interests .container > p {
+    width: auto;
+  }
+}

@@ -6,7 +6,10 @@
   --primary-colour: #FFFAEC;
   --primary-oposite-colour: #575B8A;
   --primary-orange: rgb(165, 62, 21);
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  
 }
 
 html {
@@ -39,6 +42,7 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 999;
 }
 
 .portrait {
@@ -49,27 +53,27 @@ section {
   overflow: hidden;
 }
 
+.portrait > img {
+  transition: all .5s ease-in-out;
+}
+
 .portrait:hover > img {
   transform: scale(1.1);
 }
 
-.portrait > img {
-  border-radius: 50%;
-  transition: all .5s ease-in-out;
+.nav-list {
+  display: inline-block;
 }
 
 .list-item {
   position: relative;
-  text-transform: uppercase;
   line-height: 2;
-  font-weight: 600;
   color: var(--primary-colour);
   font-size: 1.3em;
-  width: 250px;
+  padding: 0 2.4em;
   background: var(--primary-orange);
   border: 3px solid var(--primary-colour);
-  margin-bottom: 10px;
-  right: -0px;
+  margin-bottom: .5em;
   border-radius: 5px;
   transition: all .2s ease-in-out;
 }
@@ -189,6 +193,8 @@ section {
 .event-desc {
   padding-right: 5em;
   line-height: 1.5;
+  width: 80%;
+  min-width: 500px;
 }
 
 .row-date {
@@ -270,9 +276,6 @@ section {
 #interests .container > p {
   line-height: 1.5;
   width: 80%;
-}
-
-#interests .container > p {
   margin-bottom: 20px;
 }
 
