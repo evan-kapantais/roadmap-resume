@@ -61,3 +61,30 @@
     width: auto;
   }
 }
+
+@media (max-width: 812px) {
+  .menu-button {
+    display: block;
+    position: absolute;
+    right: 40px;
+  }
+
+  .nav-list {
+    position: absolute;
+    right: 0px;
+    top: 100px;
+    background: var(--primary-oposite-colour);
+    padding: 10px;
+    text-align: center;
+  }
+
+  .list-item {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: normal;
+  }
+
+  .list-item:nth-child(even) {
+    right: 0;
+  }
+}
