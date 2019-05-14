@@ -78,9 +78,10 @@
   }
 }
 
-@media(max-width: 375px) {
+@media (max-width: 375px) {
 
   .navbar {
+    background: transparent;
     height: 80px;
   }
 
@@ -91,15 +92,16 @@
 
   .nav-list {
     flex-flow: column nowrap;
-    /* height: 120px; */
     background: var(--primary-oposite-colour);
+    border-bottom-left-radius: 5px;
     position: absolute;
-    top: 20px;
+    top: 0;
     right: -140px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1em;
+    padding: .5em;
+    transition: all .3s ease;
   }
 
   .list-item {
@@ -107,18 +109,7 @@
     line-height: 2;
     right: inherit;
     font-size: .9em;
-  }
-
-  .menu-button, .nav-list {
-    transition: all .3s ease;
-  }
-
-  .menu-button:focus {
-    right: -120px;
-  }
-
-  .menu-button:focus + .nav-list {
-    right: 0px;
+    /* transition: none; */
   }
 
   .header {

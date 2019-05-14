@@ -37,6 +37,7 @@ section {
   width: 300px;
   height: 100vh;
   background: var(--primary-oposite-colour);
+  color: var(--primary-colour);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -63,21 +64,23 @@ section {
 
 .menu-button {
   padding: 8px 10px;
-  border: 2px solid var(--primary-colour);
-  background: var(--primary-oposite-colour);
+  border: 2px solid var(--primary-oposite-colour);
+  background: var(--primary-colour);
   border-radius: 5px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   position: absolute;
+  top: 20px;
   right: 20px;
+  transition: all .3s ease;
 }
 
 .line {
   width: 20px;
   height: 2px;
-  background: var(--primary-colour);
+  background: var(--primary-oposite-colour);
   border-radius: 2px;
   margin-bottom: 4px;
 }
