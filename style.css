@@ -62,13 +62,28 @@ section {
 }
 
 .menu-button {
-  padding: 5px 15px;
-  background: var(--primary-orange);
+  padding: 8px 10px;
   border: 2px solid var(--primary-colour);
-  color: var(--primary-colour);
+  background: var(--primary-oposite-colour);
   border-radius: 5px;
-  margin-bottom: 10px;
-  display: none;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 20px;
+}
+
+.line {
+  width: 20px;
+  height: 2px;
+  background: var(--primary-colour);
+  border-radius: 2px;
+  margin-bottom: 4px;
+}
+
+.line:last-child {
+  margin-bottom: 0;
 }
 
 .nav-list {

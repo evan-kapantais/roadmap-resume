@@ -1,4 +1,5 @@
 @media (max-width: 1120px) {
+
   .navbar {
     top: 0;
     left: 0;
@@ -67,6 +68,7 @@
   .header {
     padding: 3em;
   }
+
   .about-heading {
     font-size: 3em;
   }
@@ -78,13 +80,106 @@
 
 @media(max-width: 375px) {
 
-  
+  .navbar {
+    height: 80px;
+  }
+
+  .portrait {
+    width: 50px;
+    border: 2px solid var(--primary-colour);
+  }
+
+  .nav-list {
+    flex-flow: column nowrap;
+    /* height: 120px; */
+    background: var(--primary-oposite-colour);
+    position: absolute;
+    top: 20px;
+    right: -140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+  }
+
+  .list-item {
+    display: block;
+    line-height: 2;
+    right: inherit;
+    font-size: .9em;
+  }
+
+  .menu-button, .nav-list {
+    transition: all .3s ease;
+  }
+
+  .menu-button:focus {
+    right: -120px;
+  }
+
+  .menu-button:focus + .nav-list {
+    right: 0px;
+  }
+
+  .header {
+    padding: 1em;
+  }
+
   .about-heading {
-    font-size: 2.2em;
+    font-size: 2em;
     margin-bottom: 10px;
   }
 
   .about-sub {
-    line-height: 1.5;
+    font-size: 1em;
+    line-height: 1.4;
+  }
+
+  .social-item {
+    width: 3em;
+  }
+
+  .section {
+    padding: 1em;
+  }
+
+  .container > h1 {
+    font-size: 2em;
+    margin-bottom: 1.5em;
+  }
+
+  .event-title {
+    font-size: 1.2em;
+  }
+
+  .event-sub {
+    font-size: 1em;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .row-content {
+    margin-bottom: 1.5em;
+    text-align: justify;
+  }
+
+  .event-desc {
+    padding: 0;
+    width: auto;
+    min-width: auto;
+  }
+
+  .row-date {
+    width: auto;
+  }
+
+  #interests > .container > h1 {
+    font-size: 2em;
+  }
+
+  #interests p {
+    text-align: justify;
   }
 }
