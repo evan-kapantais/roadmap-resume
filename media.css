@@ -87,7 +87,11 @@
 
   .portrait {
     width: 50px;
-    border: 2px solid var(--primary-colour);
+    border: 2px solid var(--primary-oposite-colour);
+  }
+
+  .portrait:hover > img {
+    transform: none;
   }
 
   .menu-button {
@@ -186,5 +190,19 @@
 
   #interests p {
     text-align: justify;
+  }
+
+  .tools {
+    margin-bottom: none;
+  }
+
+  .tool {
+    height: auto;
+    margin-right: 10px;
+    padding: 0;
+  }
+
+  .tool > p {
+    font-size: .8em;
   }
 }

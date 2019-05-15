@@ -66,7 +66,7 @@ section {
 .menu-button {
   padding: 8px 10px;
   border: 2px solid var(--primary-oposite-colour);
-  background: var(--primary-colour);
+  background: #fff;
   border-radius: 5px;
   display: flex;
   flex-flow: column nowrap;
