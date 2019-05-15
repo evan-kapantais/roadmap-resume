@@ -108,19 +108,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: .5em;
     transition: all .3s ease;
   }
 
   .list-item {
     display: block;
+    padding: .1em 1em;
+    width: 100%;
     line-height: 2;
     right: inherit;
     font-size: .9em;
+    border-bottom: 1px solid #fff;
+    transition: none;
   }
 
   .header {
     padding: 1em;
+    margin-top: 8em;
   }
 
   .about-heading {
@@ -149,7 +153,7 @@
   }
 
   .section {
-    padding: 1em;
+    padding: 8em 1em;
   }
 
   .container > h1 {
@@ -182,6 +186,12 @@
 
   .row-date {
     width: auto;
+  }
+
+  #education .container,
+  #interests .container,
+  #skills .container {
+    margin-top: 0;
   }
 
   #interests > .container > h1 {

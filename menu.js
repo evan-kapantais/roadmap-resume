@@ -13,11 +13,6 @@ function handleNavLinkClick() {
 }
 
 menuBtn.onclick = function() {
-
   this.style.top = "-100px";
-  setTimeout (function() {
-
-    menu.style.right = 0;
-
-  }, 300);
+  menu.style.right = 0;
 }
